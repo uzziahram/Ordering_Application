@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    height: 100%;  
+    font-family: Gluten;
+}
+#header {
+    display: flex;
+    background-color: rgba(239, 0, 0, 0.775);
+    color: aliceblue;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  
+}       
+
+#mainbody {
+    margin: 0;
+    padding: 0;
+}
+
+
+#MrMs {
+    display: block;
+    margin: auto;
+}
+
+#entrance {
+    display: flex;
+    place-items: center;
+    background-color: #f3eeee;
+    box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.3);
+    color: #f50e0e;
+}
+
+#entrance div {
+    padding: 0rem 2rem 0rem 2rem;
+    width: 100%;
+    justify-items: center;
+}
+
+.sections {
+    display: flex;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
