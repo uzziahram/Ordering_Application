@@ -27,6 +27,17 @@
                 Choose! and we will prepare it
             </h1>
         </div>
+        <div>
+            <h1>Stock Items</h1>
+        </div>
+        <div>
+            <ul>
+                <% stockItems.forEach(item => { %>
+                    <h4> <%= item.name %></h4>
+                    <p> <%= item.category %></p>
+                <% }) %>
+            </ul>
+        </div>
         
     </div>
 
