@@ -17,6 +17,9 @@ export async function connectToCluster(uri) {
         }
      }
 
+
+
+
 //enable CRUD operations
 export async function executeStockCrudOperations() {
         const uri = process.env.DB_URI;

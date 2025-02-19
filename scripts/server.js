@@ -1,5 +1,5 @@
 import express from 'express';
-import { connectionToApi } from './db.js';
+import FrontUIrouter from './routes/api/frontUI.js';
 
 const App = express();
 const Port = 5000;
@@ -13,10 +13,5 @@ App.listen(5000, () => {
     console.log(`App is runing on localhost:${Port}`)
 })
 
-App.get('/', async (req, res) => {
-
-    const importedStocks = await connectionToApi();
-    res.render('main',{ importedStocks })
-
-})
+App.use('/', FrontUIrouter)
 
