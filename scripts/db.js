@@ -1,7 +1,29 @@
-import mongoose from "mongoose";
+import { MongoClient } from 'mongodb';
 
-mongoose.connect('mongodb+srv://uzziahgenella:th6jBkfA4yXvk3Vs@cluster0.v7yuu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
-        .then(() => console.log('Connected to MongoDB'))
-        .catch(err => console.error('Could not connect to MongoDB:', err));
+export async function connectToCluster(uri) {
+        let mongoClient;
+     
+        try {
+            mongoClient = new MongoClient(uri);
+            console.log('Connecting to MongoDB Atlas cluster...');
+            await mongoClient.connect();
+            console.log('Successfully connected to MongoDB Atlas!');
+     
+            return mongoClient;
+        } catch (error) {
+            console.error('Connection to MongoDB Atlas failed!', error);
+            process.exit();
+        }
+     }
 
-export default mongoose;
+
+export async function executeStudentCrudOperations() {
+        const uri = process.env.DB_URI;
+        let mongoClient;
+
+        try {
+                mongoClient = await connectToCluster(uri);
+        } finally {
+                await mongoClient.close();
+        }
+}
