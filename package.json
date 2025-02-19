@@ -11,8 +11,10 @@
     "dev": "nodemon ./scripts/server.js"
   },
   "dependencies": {
+    "dotenv": "^16.4.7",
     "ejs": "^3.1.10",
     "express": "^4.21.2",
+    "mongodb": "^6.13.0",
     "mongoose": "^8.10.1",
     "nodemon": "^3.1.9",
     "path": "^0.12.7"
