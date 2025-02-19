@@ -1,5 +1,4 @@
-import express from 'express'
-import FrontUIrouter from './routes/api/frontUI.js';
+import express from 'express';
 
 const App = express();
 const Port = 5000;
@@ -7,10 +6,6 @@ const Port = 5000;
 App.set('view engine', 'ejs');
 App.set('views', 'views');
 App.use(express.static('./public'));
-
-App.use("/", FrontUIrouter )
-
-
 App.listen(5000, () => {
     console.log(`App is runing on localhost:${Port}`)
 })
