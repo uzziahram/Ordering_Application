@@ -1,6 +1,9 @@
 import { config } from "dotenv";
-import { executeStockCrudOperations } from "./connectionToMongoDB.js"
+import { executeStockCrudOperations } from "./mongodbOperations.js"
 
 config();
-console.log(process.env.DB_URI);
+await executeStockCrudOperations();
+
+
+
 

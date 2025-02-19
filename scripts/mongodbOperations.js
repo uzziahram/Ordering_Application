@@ -1,5 +1,6 @@
 import { MongoClient } from 'mongodb';
 
+//connecting to cluster/db/collections
 export async function connectToCluster(uri) {
         let mongoClient;
      
@@ -16,16 +17,35 @@ export async function connectToCluster(uri) {
         }
      }
 
-
+//enable CRUD operations
 export async function executeStockCrudOperations() {
         const uri = process.env.DB_URI;
-
         let mongoClient;
 
         try {
             mongoClient = await connectToCluster(uri);
+            const db = mongoClient.db('Products');
+            const collection = db.collection('Stock')
+
+            console.log("Stocks")
+            return await importStockfromMongodb(collection)
             
         } finally {
             await mongoClient.close();
         }
 }
+
+
+export const createStock = async (collection) => {
+
+    // await collection.insert
+} 
+
+export const importStockfromMongodb = async (collection) => {
+    const Stocks = await collection.find().toArray();
+    return Stocks;
+}
+
+
+
+
