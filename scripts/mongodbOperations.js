@@ -28,6 +28,8 @@ export async function executeStockCrudOperations() {
             const collection = db.collection('Stock')
 
             console.log("Stocks")
+
+            // console.log(await importStockfromMongodb(collection))
             return await importStockfromMongodb(collection)
             
         } finally {

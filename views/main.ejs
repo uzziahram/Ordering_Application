@@ -32,9 +32,8 @@
         </div>
         <div>
             <ul>
-                <% stockItems.forEach(item => { %>
-                    <h4> <%= item.name %></h4>
-                    <p> <%= item.category %></p>
+                <% importedStocks.forEach(stock => { %>
+                    <h4> <%= stock.name %></h4>
                 <% }) %>
             </ul>
         </div>
