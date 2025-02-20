@@ -28,7 +28,7 @@ export async function executeStockCrudOperations() {
         try {
             mongoClient = await connectToCluster(uri);
             const db = mongoClient.db('Products');
-            const collection = db.collection('Stock')
+            const collection = db.collection('Fast-Food-Products')
 
             console.log("Stocks")
 
@@ -42,7 +42,6 @@ export async function executeStockCrudOperations() {
 
 
 export const createStock = async (collection) => {
-
     // await collection.insert
 } 
 

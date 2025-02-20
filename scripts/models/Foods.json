@@ -1,0 +1,51 @@
+[
+    {
+      "name": "Cheeseburger",
+      "description": "A juicy beef patty with melted cheese, lettuce, tomato, and pickles on a toasted bun.",
+      "price": 5.99,
+      "image": "https://media.gettyimages.com/id/182744943/photo/burger.jpg?s=2048x2048&w=gi&k=20&c=nYyPWjKYrH_L7qKv2sS_a27N0lfi5oRKxc6OYvb7IZQ="
+    },
+    {
+      "name": "Chicken Nuggets",
+      "description": "Crispy golden chicken nuggets served with your choice of dipping sauce.",
+      "price": 4.99,
+      "image": "https://media.gettyimages.com/id/618209540/photo/basket-of-chicken-nuggets-with-sweet-and-sour-sauce.jpg?s=2048x2048&w=gi&k=20&c=48glpP_ss8pkodt2-8kDe9jL3yI2Te969q27xDFAyz0="
+    },
+    {
+      "name": "Fries",
+      "description": "Golden crispy french fries lightly salted.",
+      "price": 2.99,
+      "image": "https://media.gettyimages.com/id/614420426/photo/basket-of-french-fries.jpg?s=1024x1024&w=gi&k=20&c=_XvrKcUOymvB8M_xScI4ejyQtv6csempPGdwJc-4hW8="
+    },
+    {
+      "name": "Pepperoni Pizza",
+      "description": "Classic pepperoni pizza with a crispy crust, marinara sauce, and melted mozzarella cheese.",
+      "price": 8.99,
+      "image": "https://media.gettyimages.com/id/1906176930/photo/pepperoni-pizza-to-go.jpg?s=1024x1024&w=gi&k=20&c=N0GZWWwYRSvVxJSUTtEDfO1jZYXtyyUdF8yHGvOTvH4="
+    },
+    {
+      "name": "Fried Chicken Sandwich",
+      "description": "Crispy fried chicken breast topped with pickles and mayo on a soft brioche bun.",
+      "price": 6.99,
+      "image": "https://media.gettyimages.com/id/186470685/photo/bread-roll-with-schnitzel-on-chopping-board-close-up.jpg?s=1024x1024&w=gi&k=20&c=CwteVD3wZUuVYnvM6PFKw7AOAHs1HujAy7AFFQ03kGc="
+    },
+    {
+      "name": "Hot Dog",
+      "description": "A classic grilled hot dog in a soft bun with ketchup and mustard.",
+      "price": 3.99,
+      "image": "https://media.gettyimages.com/id/143175178/photo/chili-cheese-dog.jpg?s=1024x1024&w=gi&k=20&c=UNtHgQz-ow_BGNibWlc1a0qTsqS-3ae_qG4vTqjuW8s="
+    },
+    {
+      "name": "Milkshake",
+      "description": "A thick and creamy milkshake available in chocolate, vanilla, or strawberry.",
+      "price": 4.49,
+      "image": "https://media.gettyimages.com/id/1267801767/photo/junk-food-sugar-sugary-foods-strawberry-milkshake-and-ice-cream-sundae-with-cherry-on-top.jpg?s=1024x1024&w=gi&k=20&c=KrgredZlaXj7Zf0hKut7vXiWC99SO7c7Uomxx_tKybk="
+    },
+    {
+      "name": "Onion Rings",
+      "description": "Crispy battered onion rings fried to perfection.",
+      "price": 3.99,
+      "image": "https://media.gettyimages.com/id/175439534/photo/onion-rings-and-ketchup.jpg?s=1024x1024&w=gi&k=20&c=m9_4ViGFZk1tSAIhWBzkkw6d2JccI9zt0QwJOC_u0fM="
+    }
+  ]
+  
