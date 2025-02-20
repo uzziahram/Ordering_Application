@@ -33,7 +33,7 @@
         <div class="stocks-container">
         
                 <% importedStocks.forEach(stock => { %>
-                    <div class="stock-container">
+                    <div class="stock-container" id="<%= stock._id %>">
                         <div class="product-image-container">
                             <img src="<%= stock.image %>" alt="">
                         </div>
