@@ -7,42 +7,27 @@
     <link rel="stylesheet" href="../styles/homePage.css">
 </head>
 <body>
-
-   
     <div id="mainbody">
+
         <div id="header">
             <h4>Mr.Tomato & Ms.Lettuce</h4>
         </div>
+
         <div id="entrance">
             <div>
                 <h2>Order, Savor, Repeat – Deliciousness Delivered!</h2>
+
+                <a href="/orderingsection">
+                    <button id="order-Button"> Order Now!</button>    
+                </a>
+                
             </div>
             <div>
                 <img id="MrMs" src="../media/Pictures/download__1_-removebg-preview.png" alt="">
             </div>
         </div>
-
-        <div class="sections">
-            <h1>
-                Choose! and we will prepare it
-            </h1>
-        </div>
-        <div class="sections">
-            <h1>Stock Items</h1>
-        </div>
-        <div class="stocks-container">
-        
-                <% importedStocks.forEach(stock => { %>
-                    <div class="stock-container" id="<%= stock._id %>">
-                        <div class="product-image-container">
-                            <img src="<%= stock.image %>" alt="">
-                        </div>
-                        <h4 class="stock-name"> <%= stock.name %></h4>
-                        <h4 class="stock-price"><%= stock.price %></h4>
-                    </div>
-                <% }) %>
-        </div> 
     </div> 
-    
+
+  
 </body>
 </html>

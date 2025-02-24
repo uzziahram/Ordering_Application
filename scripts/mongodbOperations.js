@@ -19,7 +19,6 @@ export async function connectToCluster(uri) {
 
 
 
-
 //enable CRUD operations
 export async function executeStockCrudOperations() {
         const uri = process.env.DB_URI;
@@ -49,6 +48,7 @@ export const importStockfromMongodb = async (collection) => {
     const Stocks = await collection.find().toArray();
     return Stocks;
 }
+
 
 
 

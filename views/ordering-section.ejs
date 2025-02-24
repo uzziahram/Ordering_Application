@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order App</title>
+    <link rel="stylesheet" href="../styles/ordering-section.css">
+</head>
+    <body>
+
+        <div class="mainbody">
+            
+            <div id="header">
+                <h4>Mr.Tomato & Ms.Lettuce</h4>
+            </div>
+            <div class="sections">
+                
+            </div>
+
+            <div class="stocks-container">
+            
+                <% importedStocks.forEach(stock => { %>
+                    <div class="stock-container" id="<%= stock._id %>">
+                        <div class="product-image-container">
+                            <img src="<%= stock.image %>" alt="">
+                        </div>
+                        <h4 class="stock-name"> <%= stock.name %></h4>
+                        <h4 class="stock-price"><%= stock.price %></h4>
+                    </div>
+                <% }) %>
+            </div> 
+        </div>
+
+    
+    </body>
+</html>

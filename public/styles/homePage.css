@@ -4,14 +4,22 @@ body {
     font-family: Gluten;
 }
 #header {
+    height: 8vh;
     display: flex;
     background-color: rgba(239, 0, 0, 0.775);
     color: aliceblue;
     padding: 0.5rem 1rem 0.5rem 1rem;
   
-}       
+}   
+
+#header h4 {
+    place-content: center;
+}
 
 #mainbody {
+    position: fixed;
+    height: 90vh;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -23,6 +31,7 @@ body {
 }
 
 #entrance {
+    height: inherit;
     display: flex;
     place-items: center;
     background-color: #f3eeee;
@@ -53,7 +62,54 @@ body {
     padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
-.priceLabel {
+#entrance #order-Button {
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #ff5858 0, #f5280d 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+  
+}
+
+#entrance #order-Button:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #d32222 0 -3px 0 inset;
+    transform: translateY(-2px);
+
+}
+
+#entrance #order-Button:active {
+  box-shadow: #ff0808 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+
+
+
+
+/* .priceLabel {
     font-family: Arial;
 }
 .menu {
@@ -95,9 +151,8 @@ body {
     font-weight: bold;
 }
 
-
 .product-image-container img {
     width: 100%;
     height: auto;
     border-radius: 6px;
-}
+} */
